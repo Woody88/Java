@@ -1,0 +1,15 @@
+public class Coffee{
+    private static long counter = 0;
+    private final long id = counter++;
+    public String toString() {
+        return getClass().getSimpleName() + " " + id;
+    }
+}
+
+public class Latte extends Coffee {}
+
+public class Moccha extends Coffee {}
+
+public class Cappuccino extends Coffee {}
+
+public class Americano extends Coffee {}
